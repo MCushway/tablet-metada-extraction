@@ -1,0 +1,29 @@
+Metadata Type,Name,Data Type,Role,Formula
+Worksheet,Profit by Region,,,
+Worksheet,Sales by Category,,,
+Dashboard,Dashboard,,,
+Data Source,Sample - Superstore,,,
+Data Source,Sample - Superstore (2),,,
+Field,Manufacturer,string,dimension,
+Field,Orders,table,measure,
+Field,People,table,measure,
+Field,Profit (bin),integer,dimension,
+Field,Profit Ratio,real,measure,
+Field,Returns,table,measure,
+Field,[City],string,dimension,
+Field,[Country/Region],string,dimension,
+Field,[Customer ID],string,dimension,
+Field,[Customer Name],string,dimension,
+Field,[Order ID (Returns)],string,dimension,
+Field,[Postal Code],string,dimension,
+Field,[Product ID],string,dimension,
+Field,[Product Name],string,dimension,
+Field,[Profit],real,measure,
+Field,[Region (People)],string,dimension,
+Field,[Region],string,dimension,
+Field,[Row ID],integer,dimension,
+Field,[State/Province],string,dimension,
+Calculated Field,Profit (bin),,,[Profit]
+Calculated Field,Profit Bin Size,,,200
+Calculated Field,Profit Ratio,,,SUM([Profit])/SUM([Sales])
+Calculated Field,Top Customers,,,5
